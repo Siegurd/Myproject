@@ -1,0 +1,371 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Feeder</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+
+	<!-- slick -->
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.slider_main').slick({
+				dots: true,
+				infinite: true,
+				speed: 800,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				adaptiveHeight: false,
+				variableWidth: false,
+				arrows: true,
+				fade: true,
+			});
+		});
+
+		$(document).ready(function(){
+			$('.moment_slider').slick({
+				dots: true,
+				infinite: true,
+				speed: 800,
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				adaptiveHeight: false,
+				variableWidth: false,
+				arrows: true,
+				fade: false,
+			});
+		});
+	</script>
+
+</head>
+<body>
+<!-- begin container_main  -->
+<div class="container_main">
+	<!-- begin popup_main  -->
+	<div style="display: none;" id="popup" class="popup_main">
+		<!-- pu_1 -->
+		<div class="popup_inner popup_callback">
+			<a class="closeform" href="#"></a>
+			<div class="popup_block">
+				<div class="popup_title">ОБРАТНая СВЯЗЬ</div>
+				<form class="form_style">
+					<input class="in_name" type="text" value="Ваше имя">
+					<input class="in_phone" type="text" value="Ваш номер телефона">
+					<input class="in_time" type="text" value="Время звонка">
+					<div class="in_time_info">Мы свяжемся с вами в указанное время</div>
+					<div class="form_kaptcha">
+						<input type="text" value="">
+						<div class="fk_right">
+							<span>
+								<img src="img/kaptcha.png">
+							</span>
+							<a href="#">получить новый код</a>
+						</div>
+					</div>
+					<div class="text_align">
+						<button class="btn_main">
+							<span>ОТПРАВИТЬ</span>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- pu_2 -->
+		<div style="display: none;" class="popup_inner popup_new">
+			<a class="closeform" href="#"></a>
+			<div class="popup_block">
+				<div class="popup_title">ПОДПИСКА НА НОВОСТИ</div>
+				<form class="form_style">
+					<input class="in_name" type="text" value="Ваше имя">
+					<input class="in_mail" type="text" value="Ваш e-mail адрес">
+					<div class="in_time_info no_spam">• Никакого спама •</div>
+					<div class="form_kaptcha">
+						<input type="text" value="">
+						<div class="fk_right">
+							<span>
+								<img src="img/kaptcha.png">
+							</span>
+							<a href="#">получить новый код</a>
+						</div>
+					</div>
+					<div class="text_align">
+						<button class="btn_main">
+							<span>ПОДПИСАТЬСЯ</span>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- end popup_main -->
+	<a class="subscribe_new" href="#"></a>
+	<!-- begin header  -->
+	<div class="header">
+		<div class="wmain">
+			<div class="l_left">
+				<a class="h_fb" href="#">
+					<span>мы в FACEBOOK</span>
+				</a>
+			</div>
+			<div class="l_center">
+				<a class="logo" href="#"></a>
+			</div>
+			<div class="l_right">
+				<a class="btn_main" href="#">
+					<span>обратная связь</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+	<!-- begin nav_main  -->
+	<div class="nav_main">
+		<div class="wmain">
+			<ul class="nav_main_inner">
+				<li><a href="#">главная</a></li>
+				<li>
+					<a href="#">турниры</a>
+					<ul>
+						<li><a href="#">Feeder Mix Fight Challenge #2</a></li>
+						<li><a href="#">Feeder Mix Fight Challenge #1</a></li>
+					</ul>
+				</li>
+				<li><a href="#">РЕЗУЛЬТАТЫ и РЕЙТИНГ</a></li>
+				<li><a href="#">НОВОСТИ</a></li>
+				<li><a href="#">ГАЛЕРЕЯ</a></li>
+				<li><a href="#">Блоги</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+	</div> 
+	<!-- end nav_main -->
+	<div class="block_bg">
+		<!-- begin slider_main  -->
+		<div class="slider_main">
+			<div>
+				<div class="slider_main_block">
+					<div class="smb_img">
+						<a href="#">
+							<img src="img/banner_img1.jpg">
+						</a>
+					</div>
+					<div class="smb_black">
+						<div class="smb_name">
+							РЫБОЛОВНО-ТУРИСТИЧЕСКАЯ БАЗА «ВЕЛИНКА» г. Бронницы
+						</div>
+						<div class="clr"></div>
+						<div class="smb_hash">
+							#FMFC1
+						</div>
+						<div class="clr"></div>
+						<a class="smb_podr" href="#">подробнее</a>
+					</div>
+					<div class="smb_logo">
+						<div class="smb_logo_img">
+							<span>
+								<img src="img/banner_logo1.png">
+							</span>
+						</div>
+						<!-- <ul class="smb_logo_list">
+							<li><span><img src="img/banner_logo_1.png"></span></li>
+							<li><span><img src="img/banner_logo_2.png"></span></li>
+							<li><span><img src="img/banner_logo_3.png"></span></li>
+							<li><span><img src="img/banner_logo_4.png"></span></li>
+							<li><span><img src="img/banner_logo_5.png"></span></li>
+						</ul> -->
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="slider_main_block">
+					<div class="smb_img">
+						<a href="#">
+							<img src="img/banner_img2.jpg">
+						</a>
+					</div>
+					<div class="smb_black">
+						<div class="smb_name">
+							Водоем: КРХ "Генезис"<br>Водоем: КРХ "Генезис"
+						</div>
+						<div class="clr"></div>
+						<div class="smb_hash">
+							#FMFC2
+						</div>
+						<div class="clr"></div>
+						<a class="smb_podr" href="#">подробнее</a>
+					</div>
+					<div class="smb_logo">
+						<div class="smb_logo_img">
+							<span>
+								<img src="img/banner_logo2.png">
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="slider_main_block">
+					<div class="smb_img">
+						<a href="#">
+							<img src="img/banner_img3.jpg">
+						</a>
+					</div>
+					<div class="smb_black">
+						<div class="smb_name">
+							Водоем: КРХ "Генезис"
+						</div>
+						<div class="clr"></div>
+						<div class="smb_hash">
+							#FMFC3
+						</div>
+						<div class="clr"></div>
+						<a class="smb_podr" href="#">подробнее</a>
+					</div>
+					<div class="smb_logo">
+						<div class="smb_logo_img">
+							<span>
+								<img src="img/banner_logo1.png">
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end slider_main -->
+		<!-- begin what_feed  -->
+		<div class="wmain what_feed">
+			<div class="wf_left"></div>
+			<div class="wf_text">
+				<div class="wf_title">Так что же такое FEEDER MIX FIGHT CHALLENGE? </div>
+				<p>
+					Прежде всего это масса адреналина, положительных эмоций и общения, это место где любой может не только попробовать свои силы в борьбе с сильнейшими спортсменами и рыболовами-любителями, но и перенять их опыт в дружественной атмосфере! FMFC - это новое слово в отечественных соревнованиях, ведь мы продвигаем новую концепцию на основе уравнивания шансов всех участников, обеспечивая их прикормкой одного производителя.
+				</p>
+			</div>
+		</div>
+		<!-- end what_feed -->
+		<!-- begin index_new  -->
+		<div class="index_new">
+			<div class="wmain">
+				<ul class="index_new_list">
+					<li>
+						<a href="#" class="in_img">
+							<img src="img/new_inex_img1.jpg">
+							<div class="ini_plashka">
+								Результаты 
+								<span>турнира #1</span>
+							</div>
+						</a>
+						<div class="in_text">
+							26 июля 2015 года недалеко от г. Бронницы на водоеме туристической базы «Велинка» прошел первый турнир FEEDER MIX FIGHT CHALLENGE. Первый турнир собрал 59 участников...
+						</div>
+						<div class="in_btn">
+							<a class="btn_str" href="#">
+								смотреть результаты
+							</a>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="in_img">
+							<img src="img/new_inex_img2.jpg">
+							<div class="ini_plashka">
+								Главная 
+								<span>Новость</span>
+							</div>
+						</a>
+						<div class="in_text">
+							Заново стартует регистрация на второй тур Feeder Mix Fight Challenge #2 Присоединяйтесь к самой активной части рыболовного сообщества Москвы и Подмосковья... 
+						</div>
+						<div class="in_btn">
+							<a class="btn_str" href="#">
+								Читать новость
+							</a>
+							<a class="index_all_new" href="#">все новости</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- end index_new -->
+		<!-- begin moment  -->
+		<div class="moment">
+			<div class="wmain">
+				<div class="moment_left">
+					<div class="moment_title">
+						Лучшие 
+						<span>моменты</span>
+					</div>
+					<a href="#">перейти в галерею</a>
+				</div>
+				<div class="moment_slider">
+					<div>
+						<a href="#" class="ms_inner">
+							<img src="img/moment_slider_th1.jpg">
+						</a>
+					</div>
+					<div>
+						<a href="#" class="ms_inner">
+							<img src="img/moment_slider_th2.jpg">
+						</a>
+					</div>
+					<div>
+						<a href="#" class="ms_inner">
+							<img src="img/moment_slider_th3.jpg">
+						</a>
+					</div>
+					<div>
+						<a href="#" class="ms_inner">
+							<img src="img/moment_slider_th4.jpg">
+						</a>
+					</div>
+					<div>
+						<a href="#" class="ms_inner">
+							<img src="img/moment_slider_th5.jpg">
+						</a>
+					</div>
+					<div>
+						<a href="#" class="ms_inner">
+							<img src="img/moment_slider_th6.jpg">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end moment -->
+	</div>
+	<!-- block_bg end -->
+	<!-- begin footer  -->
+	<div class="footer">
+		<div class="wmain">
+			<ul class="nav_main_inner">
+				<li><a href="#">главная</a></li>
+				<li><a href="#">турниры</a></li>
+				<li><a href="#">РЕЗУЛЬТАТЫ и РЕЙТИНГ</a></li>
+				<li><a href="#">НОВОСТИ</a></li>
+				<li><a href="#">ГАЛЕРЕЯ</a></li>
+				<li><a href="#">Блоги</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<div class="clr"></div>
+			<div class="f_left">
+				<a class="h_fb" href="#">
+					<span>мы в FACEBOOK</span>
+				</a>
+			</div>
+			<div class="f_center">
+				<a class="btn_main" href="#">
+					<span>обратная связь</span>
+				</a>
+			</div>
+			<div class="f_right">
+				<a class="f_create" href="#">
+					<span>Разработка сайта:</span> WHITE-MILK.RU
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
+</div>
+<!-- end container_main -->
+</body>
+</html>
